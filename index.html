@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>ToDo List</h2>
+        <form class="form js--form">
+          <input
+            type="text"
+            class="form-control js--form__input"
+            placeholder="Enter new task"
+          />
+          <button type="submit" class="btn btn-primary mt-2">Add Task</button>
+        </form>
+        <ul class="list-group js--todos-wrapper mt-3"></ul>
+      </div>
+
+    <div class="modal fade" id="todoModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel">Ваше завдання</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="todoText"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
